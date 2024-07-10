@@ -1,0 +1,125 @@
+@import '../../../scss/colors.scss';
+@import '../../../scss/generalMixins.scss';
+@import '../../../scss/variables.scss';
+
+.main-header-container {
+    @include display-flex();
+
+    padding: 20px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, rgba(143, 143, 143, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    .controls-container {
+        @include display-flex();
+        gap: 20px;
+
+        .control-button {
+            font-family: $primary-font-family;
+            font-size: 15px;
+            padding: 12.5px 16px 12.5px 16px;
+            line-height: 15px;
+            border: 2px solid #4E9225;
+        }
+    }
+}
+
+.avatar {
+    background-color: '#F4D167';
+    color: '#21272A';
+    font-size: '12px';
+    font-weight: 500;
+    border: '1.5px solid #C4C4C4';
+}
+
+.account-menu-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-left: 10px;
+}
+
+.user-name-container {
+    background: #D0E2E9;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: $primary-font-family;
+    font-weight: 500;
+    font-size: 13px;
+    width: max-content;
+    max-width: 100%;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.MuiMenu-paper {
+    border-radius: 10px !important;
+}
+
+.MuiInputBase-root {
+    background-color: #F2F4F8;
+}
+
+.MuiSelect-select {
+    padding: 16px !important;
+    font-size: 13px !important;
+}
+
+.controls-container-mobile {
+    @include display-flex();
+    flex-direction: column;
+    gap: 10px;
+
+    .control-button {
+        font-family: $primary-font-family;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+        padding: 12.5px 16px 12.5px 16px;
+        border: 2px solid #4E9225;
+
+        &:disabled {
+            border: 2px solid #C4C4C4;
+        }
+
+    }
+}
+
+.user-name-container-mobile {
+    @include display-flex();
+
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: #D0E2E9;
+    margin-bottom: 40px;
+    padding: 13px;
+    border-radius: 40px;
+    font-family: $primary-font-family;
+    font-weight: 500;
+    font-size: 13px;
+    width: max-content;
+    max-width: 100%;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.account-menu-drawer {
+    .MuiDrawer-paper {
+        padding: 50px 16px;
+    }
+
+    .account-menu-item-container {
+        @include display-flex();
+
+        margin-top: 40px;
+    }
+}

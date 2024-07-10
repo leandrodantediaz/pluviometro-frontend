@@ -1,0 +1,70 @@
+@import '../../../../scss/colors.scss';
+@import '../../../../scss/generalMixins.scss';
+@import '../../../../scss/variables.scss';
+
+.modal-button {
+    .button-modal {
+        color: $base-white;
+        background-color: $secondary-color;
+    }
+
+    .custom-modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .modal-box {
+        background-color: $base-white;
+        padding: 20px;
+        border-radius: 17px;
+    }
+
+    .modal-title {
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .modal-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .modal-cancel {
+        color: #7F7F7F;
+    }
+}
+
+.box-input {
+    display: 'flex';
+    justify-content: 'space-between';
+}
+
+custom-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    @media (max-width: 600px) {
+        .MuiBox-root {
+            width: 90%;
+        }
+    }
+}
+
+.custom-modal {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+}

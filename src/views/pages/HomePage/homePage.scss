@@ -1,0 +1,115 @@
+@import '../../../scss/colors.scss';
+@import '../../../scss/generalMixins.scss';
+@import '../../../scss/variables.scss';
+
+.map-control-container {
+    @include display-flex();
+
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 240px);
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 20px;
+
+    @media only screen and (max-width: 1440px) {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: calc(100% - 100px);
+    }
+
+    @media only screen and (max-width: $lg) {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(100% - 40px);
+    }
+
+    @media only screen and (max-width: $md) {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: calc(100% - 32px);
+    }
+}
+
+.devices-container {
+    @include display-flex();
+
+    margin-top: 30px;
+    gap: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    flex-direction: row-reverse;
+
+    .device-button {
+        @include display-flex();
+
+        padding: 4px 10px 5px 10px;
+        border-radius: 40px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: $primary-font-family;
+        font-size: 15px;
+        width: max-content;
+        max-width: 100%;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+}
+
+
+.device-information-container {
+    @include display-flex();
+    flex-direction: column;
+    padding: 28px 16px 28px 16px;
+    gap: 10px;
+    border-radius: 20px;
+    border-image-source: linear-gradient(180deg, rgba(143, 143, 143, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: -10px 4px 20px 0px rgba(48, 48, 48, 0.1);
+    color: $black-2;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    position: absolute;
+    left: 0;
+    top: 170px;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    max-height: calc(100vh - 280px);
+    overflow-y: auto;
+    width: 330px;
+
+    @media only screen and (max-width: 1440px) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    @media only screen and (max-width: $lg) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    @media only screen and (max-width: $md) {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .detail-button {
+        align-self: flex-end;
+        padding: 12px;
+    }
+}
+
+.map-loader-container {
+    padding: 30px;
+
+    .loader-text {
+        margin: 0 30px 30px 30px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,86 @@
+/* To use this variables, simply import this file using @import "views/scss/colors.scss"; */
+
+/*
+ * Primary Colors
+ */
+
+$primary-color: #4E9225;
+$secondary-color: #2156BB;
+$third-color: #EDEEEE;
+/*
+  * White
+  */
+
+$white-1: white;
+$white-2: #FFFFFFD9;
+
+/*
+  * Black
+  */
+
+$black-1: #00000040;
+$black-2: #212628;
+
+/*
+  * Grey
+  */
+
+$gray-1: #C1C7CD;
+$gray-2: #7F7F7F;
+$gray-3: #737373;
+$gray-4: #697077;
+
+/*
+  * Base
+  */
+
+// Black
+$base-black: #000000;
+// White
+$base-white: #ffffff;
+
+
+// Red Alert
+$alert-color: #EBACA5;
+$alert-color-2: #df5c55;
+$alert-light-color: #FEF5E8;
+$bright-alert-color: #D14A3B;
+$dark-alert-color: #C47672;
+$dark-alert-color-2: #9E382C;
+// Ok Green
+$success-color: #529801;
+$bright-success-color: rgb(214 255 214);
+$dark-success-color: #485C43;
+// Warning yellow
+$warning-color: #F9DAA9;
+$dark-warning-color: #786951;
+$bright-warning-color: #F7BD5E;
+
+/*
+  * Extra Colors
+  */
+
+// Magenta
+$extra-color-1: #CB5EDB;
+// light violet
+$extra-color-2: #9B9BD7;
+// dark violet
+$extra-color-3: #3949AB;
+// Violet
+$extra-color-4: #6b75ff;
+// extra light violet
+$extra-color-5: #EFECFC;
+// featured pink
+$extra-color-6: #FE50AD;
+
+/*
+  * Opacity
+  */
+
+$opacity-1: rgba(143, 143, 143, 0.3);
+$opacity-2: rgba(255, 255, 255, 0.3);
+
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+}

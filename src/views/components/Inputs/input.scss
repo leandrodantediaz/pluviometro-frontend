@@ -1,0 +1,96 @@
+@import '../../../scss/colors.scss';
+@import '../../../scss/variables.scss';
+@import '../../../scss/generalMixins.scss';
+
+.input-container {
+  @include display-flex();
+  flex-direction: column;
+
+  .input-title {
+    font-size: 15px;
+    font-weight: $font-weight-regular;
+    margin-bottom: 8px;
+
+    @media only screen and (max-width: $sm) {
+      font-size: $font-size-S;
+    }
+  }
+
+  .password-icon-container {
+    cursor: pointer;
+  }
+
+  .input-description {
+    font-size: $font-size-XS;
+    font-weight: $font-weight-regular;
+    color: $gray-2;
+    margin-top: 4px;
+  }
+}
+
+.input-root-base {
+  @include display-flex();
+  padding: 12px 16px;
+  gap: $space-6;
+  border-radius: 6px;
+  border: 1px solid $gray-1;
+  transition: border-color 0.2s ease-in-out;
+  font-size: $font-size-M;
+  font-weight: $font-weight-regular;
+  height: 24px;
+
+  &:hover {
+    border-color: $gray-4;
+  }
+
+  &:focus {
+    border-color: $gray-4;
+  }
+
+  &:focus-visible {
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: $gray-4;
+  }
+}
+
+.input-root {
+  @extend .input-root-base;
+  background-color: transparent;
+}
+
+.input-root-grey {
+  @extend .input-root-base;
+  background-color: #F2F4F8;
+}
+
+.input-base {
+  @include display-flex();
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.input {
+  @extend .input-base;
+  background-color: transparent;
+}
+
+.input-grey {
+  @extend .input-base;
+  background-color: #F2F4F8;
+}
+
+.base--error {
+  border-color: $alert-color-2;
+}
+
+.Mui-selected {
+  background-color: #F2F4F8 !important;
+}
+
+.Mui-selected:hover {
+  background-color: #F2F4F8 !important;
+}

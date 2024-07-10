@@ -1,0 +1,117 @@
+@import '../../../scss/colors.scss';
+@import '../../../scss/generalMixins.scss';
+@import '../../../scss/variables.scss';
+
+html {
+    overflow: hidden;
+}
+
+.container {
+    background-color: $third-color;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: $primary-font-family;
+}
+
+.header {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100vw;
+    height: 100%;
+}
+
+.menu {
+    background-color: $base-white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 17px;
+    height: max-content;
+    width: 12%;
+    margin: 20px;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.modal-custom {
+    display: grid;
+    place-items: center;
+}
+
+.Data {
+    margin: 20px;
+    background-color: $base-white;
+    padding: 20px;
+    height: 70%;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: calc(100vw - 20%);
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.modal-head {
+    width: 100%;
+}
+
+.modal-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+.DeviceButton.selected,
+.UserButton.selected,
+.PlanButton.selected {
+    font-weight: bold;
+    border-left: 3px solid $primary-color;
+}
+
+@media only screen and (max-width: 766px) {
+    .information {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin: auto;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        margin: auto;
+        width: 85%;
+    }
+
+    .DeviceButton.selected,
+    .UserButton.selected,
+    .PlanButton.selected {
+        font-weight: bold;
+        border-left: none;
+    }
+
+    .Data {
+        height: 70vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+        margin: 10px auto;
+    }
+}

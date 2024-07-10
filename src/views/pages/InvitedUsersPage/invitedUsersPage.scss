@@ -1,0 +1,102 @@
+@import '../../../scss/colors.scss';
+@import '../../../scss/variables.scss';
+@import '../../../scss/generalMixins.scss';
+
+.page-container {
+  @include display-flex();
+
+  flex-direction: column;
+  width: calc(100% - 240px);
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 20px;
+  background-color: #EDEEEE;
+  height: calc(100vh - 20px);
+  overflow: auto;
+
+  @media only screen and (max-width: 1440px) {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: calc(100% - 100px);
+  }
+
+  @media only screen and (max-width: $lg) {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 40px);
+  }
+
+  @media only screen and (max-width: $md) {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: calc(100% - 32px);
+  }
+}
+
+.header-container {
+  @include display-flex();
+
+  justify-content: space-between;
+  align-items: center;
+
+  .header-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.users-container {
+  @include display-flex();
+
+  flex-direction: column;
+  align-self: center;
+  margin: 20px 0px;
+  background-color: white;
+  padding: 30px;
+  gap: 30px;
+  border-radius: 20px;
+  border: 1px;
+  width: calc(100% - 60px);
+}
+
+.add-users-button {
+  line-height: 15px !important;
+  letter-spacing: 0.5px;
+}
+
+.users-table-container {
+  border-radius: 10px;
+  border: 1px solid #DDE1E6;
+
+  .users-table-head {
+    & .MuiTableCell-head {
+      background-color: #F2F4F8 !important;
+    }
+  }
+}
+
+.detail-container {
+  @include display-flex();
+
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px !important;
+  background-color: #C4C4C4 !important;
+
+  .user-detail-item {
+    justify-content: flex-start !important;
+    font-family: $primary-font-family !important;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    width: 100% !important;
+  }
+}
+
+.invited-users-cell-skeleton {
+  border-radius: 4px;
+}

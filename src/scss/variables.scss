@@ -1,0 +1,76 @@
+/* unit base for font-size REM unit */
+$rem-base: 10px;
+
+/*
+ * Font family
+ */
+
+$primary-font-family: "Poppins";
+
+/*
+ * Spacing
+ */
+
+/* Spacing - XL */
+$space-1: 48px;
+
+/* Spacing - L */
+$space-2: 40px;
+
+/* Spacing - M */
+$space-3: 32px;
+
+/* Spacing - S */
+$space-4: 24px;
+
+/* Spacing - XS */
+$space-5: 16px;
+
+/* Spacing - XXS */
+$space-6: 8px;
+
+/*
+ * Font sizes
+ */
+
+$font-size-XXXL: 42px;
+$font-size-XXL: 32px;
+$font-size-XL: 24px;
+$font-size-L: 18px;
+$font-size-M: 16px;
+$font-size-S: 14px;
+$font-size-XS: 12px;
+$font-size-XXS: 10px;
+
+$rem-base: $font-size-S;
+
+/*
+ * Font weight
+ */
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/*
+ * Font alignments
+ */
+
+$font-alignment-left: left;
+$font-alignment-center: center;
+$font-alignment-right: right;
+
+/*
+ * Breakpoints
+ */
+
+$xs: 320px;
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+
+:export {
+    primaryFontFamily: $primary-font-family;
+}

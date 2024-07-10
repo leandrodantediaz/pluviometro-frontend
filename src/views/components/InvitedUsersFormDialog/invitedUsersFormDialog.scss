@@ -1,0 +1,30 @@
+@import '../../../scss/colors.scss';
+@import '../../../scss/generalMixins.scss';
+@import '../../../scss/variables.scss';
+
+.header-dialog-body {
+    @include display-flex();
+
+    flex-direction: column;
+    gap: 16px;
+
+    .dialog-title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24.2px;
+    }
+}
+
+.header-dialog-buttons-container {
+    @include display-flex();
+
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 14px;
+
+    .dialog-button {
+        padding: 12px;
+        align-self: flex-end;
+        border-radius: 6px;
+    }
+}
